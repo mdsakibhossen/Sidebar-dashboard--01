@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Sidebar</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap 5 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+              crossorigin="anonymous">
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+              integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"/>
+        <!-- Custom CSS  -->
+        <link rel="stylesheet" href="css/sidebar.css">
+    </head>
+    <body>
+        <!-- It is for Demo Dashboard -->
+        <!-- Nav Start -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top px-2 shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand py-2 fs-4 text-info" href="#">Dashboard</a>
+                <div style="min-width: 50%;" class="m-auto p-1 d-none d-md-block">
+                    <form class="d-md-flex">
+                        <input class="form-control me-2"
+                               type="search"
+                               placeholder="Search..."
+                               aria-label="Search">
+                        <button class="btn btn-outline-info" type="submit">Search</button>
+                    </form>
+                </div>
+                <div class=" d-none d-lg-block">
+                    <a href="">
+                        <div class="rounded-circle border border-info overflow-hidden"
+                             style="width: 50px;
+                                    height: 50px;">
+                            <img src="images/joker.jpg" alt="" class="img-fluid rounded-circle">
+                        </div>
+                    </a>
+                </div>
+                <button class="navbar-toggler pe-0"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        onclick="menu_run()">
+                    <span class="bar bg-info"></span>
+                    <span class="bar bg-info"></span>
+                    <span class="bar bg-info"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- Nav End -->
+        <div class="container-fluid">
+            <div class="main">
+                <!-- Sidebar Start  -->
+                <div class="left">
+                    <div class="sidebar bg-dark text-white p-3" style="min-height: 100vh;">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link link-light active" aria-current="page" href="#"><i class="fa-solid fa-house-chimney"></i> Home Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-light" href="#"><i class="fa-solid fa-globe"></i> Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-light" href="#"><i class="fa-solid fa-user-pen"></i> Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-light" href="#"><i class="fa-solid fa-users"></i> Users</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-light" href="#"><i class="fa-solid fa-message"></i> Messages</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link link-light dropdown-toggle"
+                                   href="#"
+                                   id="classDropdown"
+                                   role="button"
+                                   data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    <i class="fa-regular fa-rectangle-list"></i> Class
+                            </a>
+                            <ul class="dropdown-menu bg-secondary w-100"
+                                aria-labelledby="classDropdown">
+                                <li>
+                                    <a class="dropdown-item link-light" href="#">Add Class</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item link-light" href="#">View Class</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link link-light dropdown-toggle"
+                               href="#"
+                               id="courseDropdown"
+                               role="button"
+                               data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                <i class="fa-solid fa-square-plus"></i> Courses
+                        </a>
+                        <ul class="dropdown-menu bg-secondary w-100"
+                            aria-labelledby="courseDropdown">
+                            <li>
+                                <a class="dropdown-item link-light" href="#">Add Course</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item link-light" href="#">View Course</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="#"><i class="fa-solid fa-key"></i> Change Password</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Sidebar End -->
+        <!-- Start Content Part  -->
+        <div class="right mt-2 overflow-hidden">
+            <div class="alert alert-info text-center" role="alert">
+                <h2>Content</h2>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nisi tempora non aliquam dolorem vitae qui nemo laborum optio esse, doloremque fuga quos odit officia cum inventore iusto earum sed tempore rerum dolorum nobis reprehenderit quo facere? Labore, cupiditate iusto. Alias dolorum unde est asperiores consequatur accusamus quasi? Molestiae nemo cumque repudiandae natus aliquam inventore quaerat fugit. Ad, ipsa eveniet. Rem, aperiam suscipit eius libero ea pariatur ducimus expedita id aliquam, doloremque hic nam earum animi unde. Provident voluptatum laboriosam, corrupti incidunt sapiente reiciendis velit voluptatem vitae fuga illo totam ex modi nihil id, ullam officiis. Accusantium aperiam, at laudantium expedita sapiente, repellendus eligendi illum animi ex, velit repellat! Laudantium iste iure tempore voluptas harum? Beatae dolore similique, eligendi voluptatibus placeat ipsum sunt reiciendis ullam, aperiam quibusdam, sequi officia laborum molestias ratione natus reprehenderit suscipit eaque eius. Quis dolorem consequuntur officia facere repudiandae reiciendis? Ipsa, nulla animi? Necessitatibus sed similique quisquam repellendus rerum deleniti neque assumenda fugiat ut exercitationem laboriosam tenetur, sunt nobis aliquam reiciendis natus facere? Soluta excepturi, laboriosam eligendi sit asperiores magni laborum consequuntur nisi cumque repellendus a ea minus, inventore veritatis assumenda aliquid deserunt laudantium non nobis iure, perspiciatis cum fugiat? Tenetur ex ipsum facere nostrum molestias recusandae, voluptates odit eaque ullam iste, repellat a reiciendis natus ipsa voluptatum est quos esse corrupti? Placeat sequi tenetur repudiandae animi aut ut ipsa, blanditiis, cum temporibus fugit voluptatibus ipsum unde delectus. Nam recusandae quaerat odio excepturi provident distinctio ducimus optio dignissimos laudantium tenetur sed eius dolor molestias delectus assumenda, laboriosam velit, voluptatem accusantium reiciendis voluptas aspernatur! Fuga voluptas vero, ut assumenda minima nihil quibusdam totam fugit ullam incidunt cum amet? Optio ullam consectetur fugit. Accusamus possimus exercitationem, modi eum repellendus dolor voluptatem nobis magni consectetur ullam in nulla molestiae suscipit illum harum provident hic aliquid odio voluptas eos voluptate, eaque minima unde! Perferendis tenetur tempora laboriosam repellendus libero reiciendis et itaque minima alias in odio molestias numquam nihil harum veniam deserunt quia consequatur, hic eligendi! Error aspernatur consequuntur illum, optio ex quia, rem modi tenetur reiciendis cupiditate magni dolores quae, vitae rerum eligendi tempora officia recusandae distinctio! Quis deserunt accusantium, vel a fuga unde dignissimos quasi? Provident porro aut voluptatum a quam nesciunt ipsa assumenda consectetur veritatis explicabo veniam alias labore obcaecati voluptatem quas, vitae, facilis quasi libero perspiciatis nobis. Dolorum, amet distinctio hic ipsam quaerat voluptates quos eos ea aut fuga qui veritatis dicta tempore accusantium itaque sunt quam nam? Blanditiis pariatur minus error quibusdam. Ipsum non sit maxime sequi, adipisci vel est! Laborum, fugit voluptate dolorum vero ipsum sed provident cumque cum praesentium sequi doloribus possimus suscipit eveniet expedita? Consequatur repellat maiores, repudiandae ratione dolorem ipsam fugit, qui itaque quo rerum quasi. Amet, beatae eum dignissimos excepturi soluta libero tempore culpa inventore unde rem nihil, et, doloremque adipisci corrupti magnam. Culpa id, hic dolorem non laudantium deleniti, rem voluptatum, quis debitis ut ipsum sunt neque! Atque laudantium velit quis iste. Tempora atque beatae ex recusandae libero, totam magni quis harum ratione error nemo, dolore tenetur nulla? Aliquam.
+            </p>
+        </div>
+        <!-- End Content Part  -->
+    </div>
+</div>
+<!-- Jquery JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+<!-- Bootstrap 5 Bundle with Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- Font Awesome JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Custom JS  -->
+<script src="js/sidebar.js"></script>
+</body>
+</html>
